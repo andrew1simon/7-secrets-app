@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/new-index.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="./photoswipe.umd.min.js"></script>
+    <script src="./photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
+    <script src="js/main.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="/js/add-app.js" defer></script>
+    <link rel="shortcut icon" href="img/app-icon.jpg">
+    <link rel="apple-touch-icon" href="img/app-icon.jpg">
+    <title>7 secrets</title>
+</head>
+<body>
+
+   
+    <ons-navigator swipeable id="myNavigator" page="home.html"></ons-navigator>
+
+    <template id="home.html">
+      <ons-page id="home">
+        <ons-toolbar>
+            <div class="d-flex align-items-center header-upper">
+                <div class="row header-cont">
+                    <div class="col">
+                        <h3 class="text-header">7 secrets</h3>
+                    </div>
+                </div>
+            </div>
+          </ons-toolbar>
+        
+         
+        <div class="home-cont-upper d-flex flex-column align-items-center">
+            <h3 class="welcome-text">Welcome.</h3>
+            <img src="/img/home-img.png" class="home-img">
+            <div class="row start-btns-row f-width">
+                <div class="btn-col d-flex align-items-center justify-content-center"><ons-button id="push-button" class="btns-home day1"><center><i class="fa-solid fa-bullhorn"></i></center><center>43ar</center> </ons-button></div>
+            </div>
+            <div class="row f-width">
+                <div class="btn-col d-flex align-items-center justify-content-center"><ons-button id="push-button" class="btns-home tranime"><center><i class="fa-solid fa-file"></i></center><center>tranime</center> </ons-button></div>
+            </div>
+            <div class="space"></div>
+        </div>
+        <div class="buttom-menu-upper-cont">
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon active" onclick="home()"></i><h4 class="buttom-menu-text active">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+            </div>
+    
+        </div>
+        
+      </ons-page>
+    </template>
+    <template id="tranime.html">
+        <ons-page id="tranime">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days">
+              <img src="/img/sunshine.jpeg" class="home-img">
+          </div>
+          
+          <ul class="list-cont">
+            <a><li class="list-text" onclick="amdahflbatol()">امدح فى البتول</li></a>
+            <a><li class="list-text" onclick="anasakn()">انا ساكن فى حصون الصخر</li></a>
+
+<a><li class="list-text Sourty-3andak" onclick="tolma ()">طول ما انت لينا اغلى رفيق</li></a>
+
+<a><li class="list-text Sourty-3andak" onclick="yamaram() ">يا مريم</li></a>
+          </ul>
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center" onclick="home()"><i class="fa-solid fa-house menu-icon"></i><h4 class="buttom-menu-text">home</h4></div>
+                  <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                  <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+
+      <template id="amdah-fl-batol.html">
+        <ons-page id="amdah-fl-batol">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top-sub"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+             
+              <h3 class="title-sub-pages"> امدح فى البتول</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/امدح فى البتول.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/امدح فى البتول.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <script type="module">
+                import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                let lightbox2 = new PhotoSwipeLightbox({
+                  gallery: '#my-gallery',
+                  children: 'a',
+                  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                });
+                lightbox2.init();
+                </script>
+             
+          </div>
+          </div>
+         
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon" onclick="home()"></i><h4 class="buttom-menu-text">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+      <template id="ana-sakn.html">
+        <ons-page id="ana-sakn">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top-sub"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+             
+              <h3 class="title-sub-pages">ترنيمة انا ساكن فى حصون الصخر</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/انا ساكن فى حصون الصخر.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/انا ساكن فى حصون الصخر.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <script type="module">
+                import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                let lightbox3 = new PhotoSwipeLightbox({
+                  gallery: '#my-gallery',
+                  children: 'a',
+                  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                });
+                lightbox3.init();
+                </script>
+             
+          </div>
+          </div>
+         
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon" onclick="home()"></i><h4 class="buttom-menu-text">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+
+      <template id="tol-ma.html">
+        <ons-page id="tol-ma">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top-sub"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+             
+              <h3 class="title-sub-pages">ترنيمة طول ما انت لينا اغلى رفيق</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/طول ما انت لينا اغلى رفيق.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/طول ما انت لينا اغلى رفيق.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <script type="module">
+                import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                let lightbox4 = new PhotoSwipeLightbox({
+                  gallery: '#my-gallery',
+                  children: 'a',
+                  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                });
+                lightbox4.init();
+                </script>
+             
+          </div>
+          </div>
+         
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon" onclick="home()"></i><h4 class="buttom-menu-text">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+      <template id="ya-maram.html">
+        <ons-page id="ya-maram">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top-sub"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+             
+              <h3 class="title-sub-pages">ترنيمة يا مريم</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/يا مريم.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/يا مريم.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <script type="module">
+                import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                let lightbox5 = new PhotoSwipeLightbox({
+                  gallery: '#my-gallery',
+                  children: 'a',
+                  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                });
+                lightbox5.init();
+                </script>
+             
+          </div>
+          </div>
+         
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon" onclick="home()"></i><h4 class="buttom-menu-text">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+      <template id="s3ar.html">
+        <ons-page id="s3ar">
+            <ons-toolbar>
+                <div class="d-flex align-items-center header-upper">
+                    <div class="row header-cont">
+                        <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></div>
+                        <div class="col">
+                           <h3 class="text-header">7 secrets</h3>
+                        </div>
+                    </div>
+                </div>
+              </ons-toolbar>
+               
+                <h3 class="title-sub-pages">الشعار</h3>
+                <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                  <a
+                    href="/img/الشعار.png"
+                    data-pswp-width="600"
+                    data-pswp-height="650"
+                    target="_blank" style="
+                    display: flex;
+                    justify-content: center;"
+                  >
+                    <img
+                      src="/img/الشعار.png"
+                      alt="" class="tranime-img"
+                    />
+                  </a>
+                  
+                  </a>
+                </div>
+                <script type="module">
+                  import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                  let lightbox8 = new PhotoSwipeLightbox({
+                    gallery: '#my-gallery',
+                    children: 'a',
+                    pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                  });
+                  lightbox8.init();
+                  </script>
+               
+            </div>
+            </div>
+           
+                <div class="space"></div>
+            </div>
+            <div class="buttom-menu-upper-cont">
+                <div class="row">
+                    <div class="col d-flex flex-column align-items-center justify-content-center" onclick="home()"><i class="fa-solid fa-house menu-icon"></i><h4 class="buttom-menu-text ">home</h4></div>
+                    <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon"></i><h4 class="buttom-menu-text">calender</h4></div>
+                    <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon active"></i><h4 class="buttom-menu-text active">43ar</h4></div>
+                </div>
+        
+            </div>
+        </ons-page>
+      </template>
+      <template id="calender.html">
+        <ons-page id="calender">
+          <ons-toolbar>
+              <div class="d-flex align-items-center header-upper">
+                  <div class="row header-cont">
+                      <div class="col-2"><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></button></div>
+                    <div class="col">
+                       <h3 class="text-header">7 secrets</h3>
+                    </div>
+                  </div>
+              </div>
+            </ons-toolbar>
+          <div class="space-top-sub"></div>
+          <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+             
+              <h3 class="title-sub-pages">calender</h3>
+              <br>
+              <h3 class="title-sub-pages">Day 1</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/اليوم الاول بعد التعديل.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/اليوم الاول بعد التعديل.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <h3 class="title-sub-pages">Day 2</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/اليوم التانى بعد التعديل.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/اليوم التانى بعد التعديل.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                </a>
+              </div>
+              <h3 class="title-sub-pages">Day 3</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/اليوم الثالث.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/اليوم الثالث.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+               
+              </div>
+              <h3 class="title-sub-pages">Day 4</h3>
+              <div class="pswp-gallery d-flex justify-content-center align-items-center" id="my-gallery" >
+                <a
+                  href="/img/اليوم الرابع نسخة 2.png"
+                  data-pswp-width="1875"
+                  data-pswp-height="2500"
+                  target="_blank" style="
+                  display: flex;
+                  justify-content: center;"
+                >
+                  <img
+                    src="/img/اليوم الرابع نسخة 2.png"
+                    alt="" class="tranime-img"
+                  />
+                </a>
+                
+                
+              </div>
+              <script type="module">
+                import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+                let lightbox9 = new PhotoSwipeLightbox({
+                  gallery: '#my-gallery',
+                  children: 'a',
+                  pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+                });
+                lightbox9.init();
+                </script>
+             
+          </div>
+          </div>
+         
+              <div class="space"></div>
+          </div>
+          <div class="buttom-menu-upper-cont">
+              <div class="row">
+                  <div class="col d-flex flex-column align-items-center justify-content-center"><i class="fa-solid fa-house menu-icon" onclick="home()"></i><h4 class="buttom-menu-text">home</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class="fa-solid fa-calendar menu-icon active"></i><h4 class="buttom-menu-text active">calender</h4></div>
+                <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class="fa-solid fa-bullhorn menu-icon"></i><h4 class="buttom-menu-text">43ar</h4></div>
+              </div>
+      
+          </div>
+        </ons-page>
+      </template>
+      
+</body>
+</html>
+
+
+
+
